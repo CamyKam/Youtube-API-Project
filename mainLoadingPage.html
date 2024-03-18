@@ -1,0 +1,30 @@
+<head>
+</head>
+<button onclick="getTokenAndSetApiKey()">Get Token and Set API</button><br><br>
+<div class="search-form-container">
+    <input id="search-videos" type="text" class="search-input" placeholder="Search Videos...">
+    <button onclick="getVideos(false, null)">Search Video Results</button>
+</div>
+<div class="search-form-container">
+    <h2>Create a Playlist</h2>
+    <h3>Make a playlist based on a search term</h3>
+    <input id="playlist-title" type="text" class="playlist-title" placeholder="Playlist Title..."><br>
+    <input id="playlist-keyword" type="text" class="playlist-keyword" placeholder="I want videos of..."><br>
+    <p>How many video results do you want in the playlist?<p>
+    <input id="num-of-videos" type="text" class="num-of-video-resul" placeholder="Number of videos to add"><br>
+    <button onclick="createPlaylist();">Create Playlist</button><br><br>
+</div>
+
+<body>
+    <h1>Video Results</h1>
+    <!-- table for showing data -->
+    <table id="videos"></table>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://accounts.google.com/gsi/client" onload="initClient()" async defer></script>
+<script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+<script src="script.js"></script>
+
+<!-- TO RUN PROGRAM ENTER python -m http.server 8000-->
