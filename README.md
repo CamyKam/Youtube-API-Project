@@ -1,8 +1,8 @@
-# You-Tube API for Auto Creation of Playlists 
+# YouTube API for Auto Creation of Playlists 
 
 This project allows for users to utilize an API key from Youtube for their accounts to automatically create a playlist based on search terms. Users specify a search term, how many videos they'd like to add to a playlist using that search term, and the title of the generated playlist. 
 
-Users MUST request an API key from Youtube and register the application in order to use this feature. Details and instructions can be found [Here] (https://developers.google.com/youtube/v3/getting-started#before-you-start). The api key should then be included in the MainYT.py file by updating the variable 'api_key'
+Users MUST request an API key from Youtube and register the application in order to use this feature. Details and instructions can be found at (https://developers.google.com/youtube/v3/getting-started#before-you-start). The api key should then be included in the MainYT.py file by updating the variable 'api_key'
 
 ## Steps on Application Use
 1. The application is to be run on the local server 8000
